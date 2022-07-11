@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.map {
+  filter: brightness(75%);
+}

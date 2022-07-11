@@ -1,15 +1,212 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bawandeep | Fullstack Developer | In Training</title>
     <link rel="icon" href="./assets/images/LOGO-4.png">
+    <title>Bawandeep | Fullstack Developer | In Training</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- <link rel="stylesheet" href="./assets/Debug.css"> -->
+
+
 </head>
 
 <body>
-    <h1>Bawandeep Singh</h1>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="./assets/images/LOGO-4.png" alt="Logo of letter B">
+                <span>Bawandeep</span>
+            </a>
+            <span>Web Developer</span>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__items">
+                    <a class="nav__link" href="#home">Home</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__link" href="#skills">My Skills</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__link" href="#about">About me</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__link" href="#work">My Work</a>
+                </li>
+                <li class="nav__items">
+                    <a class="nav__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction - include a photo, name, small greeting, button to contact me -->
+    <section class="intro" id="home">
+
+        <h1 class="section__title section__title--intro">
+            Hi,<br>
+            I'm <strong> <img src="./assets/images/LOGO-4.png" alt="logo of letter B">awandeep Singh</strong>,<br>
+            web developer
+        </h1>
+
+        <p class="section__subtitle section__subtitle--intro">Fullstack Developer / MERN Stack</p>
+
+        <img class="section__image section__image--intro" src="./assets/images/placeholder_images/400x400.jpg"
+            alt="Bawandeep smiling">
+        <a class="intro__link" href="#contact">Contact me!</a>
+    </section>
+
+    <!-- My Skills - add skill bar for each skill-->
+
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">Skills & Experience</h2>
+        <div class="my-skills__body">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend tempus nisi at placerat. Vivamus
+                interdum ante at quam consequat facilisis. Vestibulum ac neque non mi volutpat ullamcorper a a tortor.
+                Etiam
+                ac viverra lacus. Curabitur vel dignissim neque. <br>
+
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque nisl libero, placerat in dictum
+                sed,
+                gravida ac lacus. Ut gravida, lectus ac tempor accumsan, nisi metus gravida neque, eget cursus nulla
+                elit
+                quis metus. Aliquam id dignissim ante. <br>
+
+                Aliquam tempor sodales elit, non feugiat nunc viverra eget. Morbi egestas elit nec magna laoreet rutrum.
+                Vestibulum placerat consequat est, posuere laoreet urna pellentesque varius. <br>
+
+                Vist my <span>LinkedIn</span> profile for more details or just <span>contact</span> me.
+            </p>
+            <div class="section__div section__div--skills">
+                <div class="skill">
+                    <h3>Front-end</h3>
+                    <div class="background_bar">
+                        <div class="skill_bar--front_end"></div>
+                    </div>
+                </div> <!-- /Skill -->
+                <div class="skill">
+                    <h3>Back-end</h3>
+                    <div class="background_bar">
+                        <div class="skill_bar--back_end"></div>
+                    </div>
+                </div> <!-- /Skill -->
+                <div class="skill">
+                    <h3>ReactJS</h3>
+                    <div class="background_bar">
+                        <div class="skill_bar--ReactJS"></div>
+                    </div>
+                </div> <!-- /Skill -->
+
+            </div> <!-- /Skills-->
+
+            <a href="#work" class="btn">My Work</a>
+        </div>
+    </section>
+
+    <!-- About me - small paragraph about myself, journey until here -->
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Cupiditate id aliquid, beatae vero facilis nemo. Hic beatae dignissimos delectus sit. Est rem qui impedit
+            ipsam consequuntur mollitia voluptatem, id error.
+        </p>
+
+        <div class="about-me__body">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos magnam id amet tempore placeat,
+                ipsum eaque optio suscipit molestiae, et commodi aliquid aspernatur ratione, culpa quis pariatur?
+                Corporis, eos placeat.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur inventore in architecto delectus,
+                sunt quos explicabo culpa ipsam porro error corporis sapiente asperiores! Praesentium, a voluptatum sit
+                quae eius pariatur!
+            </p>
+        </div>
+        <img class="section__image section__image--about-me" src="./assets/images/placeholder_images/400x400.jpg"
+            alt="">
+    </section>
+
+    <!-- My Work - portfolio  images and links to deployement -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a class="portfolio__item" href="#">
+                <img class="section__image section__image--portfolio"
+                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+            </a>
+
+            <!-- Portfolio item 02 -->
+            <a class="portfolio__item" href="#">
+                <img class="section__image section__image--portfolio"
+                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+            </a>
+
+            <!-- Portfolio item 03 -->
+            <a class="portfolio__item" href="#">
+                <img class="section__image section__image--portfolio"
+                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+            </a>
+
+            <!-- Portfolio item 04 -->
+            <a class="portfolio__item" href="#">
+                <img class="section__image section__image--portfolio"
+                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+            </a>
+
+            <!-- Portfolio item 05 -->
+            <a class="portfolio__item" href="#">
+                <img class="section__image section__image--portfolio"
+                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Contact me contacting form, social media handles, small interactive map showing kitchener area-->
+    <section class="contact_me" id="contact">
+        <div class="section__div section__div--contact-info">
+            <h2 class="section__title section__title--contact-me">Contact me</h2>
+            <p class="section__subtitle">
+                Any questions or concerns? <br>
+                Let me know and I'll be happy to talk to you!
+            </p>
+            <a href="mailto:singhbawan48@gmail.com"><span>@</span>:singhbawan48@gmail.com</a>
+            <a href="tel:+647833****"><span>#</span>:647833****</a>
+        </div>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.2812459320808!2d-80.41248313426631!3d43.39205067913108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b8a7e1e54e5cf%3A0xc7bfd108b108e691!2sKitchener%2C%20ON%20N2P%201G4!5e0!3m2!1sen!2sca!4v1657576471756!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/singhbawan" target="_blank">
+                    <img src="./assets/images/github.png" alt="">
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/bawandeep-singh-394b32175/"
+                    target="_blank">
+                    <img src="./assets/images/linkedin (2).png" alt="">
+                </a>
+
+        </ul>
+    </footer>
+
+
+
 </body>
 
 </html>
