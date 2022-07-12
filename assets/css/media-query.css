@@ -10,6 +10,7 @@ when the viewport size is above the aforementioned value */
     --fs-h1: 4rem;
     --fs-h2: 3.25rem;
     --fs-h3: 2rem;
+    --fs-title: 4rem;
     --fs-body: 1.125rem;
   }
 }
@@ -66,5 +67,24 @@ when the viewport size is above the aforementioned value */
 
 /* Media query for Skills */
 @media (min-width: 1000px) {
+  .my-skills__body {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+  }
+
+  .section__div--skills-des {
+    width: 45vw;
+    margin: 0 1em 0 2em;
+  }
+
+  .section__div--skills-bar {
+    background-color: darkolivegreen;
+    width: 55vw;
+  }
+
+  .background_bar {
+    width: 45vw;
+  }
 }
 /* END Media query for Skills */
