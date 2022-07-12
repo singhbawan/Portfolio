@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/images/LOGO-4.png">
     <title>Bawandeep | Fullstack Developer | In Training</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <!-- <link rel="stylesheet" href="./assets/Debug.css"> -->
+    <link rel="stylesheet" href="./assets/css/tested_code_snippets.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media-query.css">
+    <link rel="stylesheet" href="./assets/css/Debug.css">
 
 
 </head>
@@ -16,28 +18,28 @@
     <header>
         <div class="logo">
             <a href="/">
-                <img src="./assets/images/LOGO-4.png" alt="Logo of letter B">
-                <span>Bawandeep</span>
+                <img class="nav-logo" src="./assets/images/LOGO-4.png" alt="Logo of letter B">
+                <h1>Bawan</h1>
             </a>
-            <span>Web Developer</span>
+            <p>Web Developer</p>
         </div>
 
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__items">
-                    <a class="nav__link" href="#home">Home</a>
+                <li class="nav__items ">
+                    <a class="nav__link btn" href="#home">Home</a>
                 </li>
                 <li class="nav__items">
-                    <a class="nav__link" href="#skills">My Skills</a>
+                    <a class="nav__link btn" href="#skills">My Skills</a>
                 </li>
                 <li class="nav__items">
-                    <a class="nav__link" href="#about">About me</a>
+                    <a class="nav__link btn" href="#about">About me</a>
                 </li>
                 <li class="nav__items">
-                    <a class="nav__link" href="#work">My Work</a>
+                    <a class="nav__link btn" href="#work">My Work</a>
                 </li>
                 <li class="nav__items">
-                    <a class="nav__link" href="#contact">Contact</a>
+                    <a class="nav__link btn" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -45,18 +47,21 @@
 
     <!-- Introduction - include a photo, name, small greeting, button to contact me -->
     <section class="intro" id="home">
+        <div>
+            <h1 class="section__title section__title--intro">
+                Hi,<br>
+                I'm <span><img class="section__image--intro-logo" src="./assets/images/LOGO-4.png" alt="B">awandeep
+                    Singh,</span><br>
+                web developer
+            </h1>
 
-        <h1 class="section__title section__title--intro">
-            Hi,<br>
-            I'm <strong> <img src="./assets/images/LOGO-4.png" alt="logo of letter B">awandeep Singh</strong>,<br>
-            web developer
-        </h1>
+            <p class="section__subtitle section__subtitle--intro">Fullstack Developer / MERN Stack</p>
 
-        <p class="section__subtitle section__subtitle--intro">Fullstack Developer / MERN Stack</p>
 
-        <img class="section__image section__image--intro" src="./assets/images/placeholder_images/400x400.jpg"
-            alt="Bawandeep smiling">
-        <a class="intro__link" href="#contact">Contact me!</a>
+            <a class="btn" href="#contact">Contact me!</a>
+        </div>
+        <img class="section__image--intro" src="./assets/images/profile pic.jpg"
+            alt="Black and white profile picture of Bawandeep smiling">
     </section>
 
     <!-- My Skills - add skill bar for each skill-->
@@ -112,9 +117,7 @@
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I am</h2>
         <p class="section__subtitle section__subtitle--about">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Cupiditate id aliquid, beatae vero facilis nemo. Hic beatae dignissimos delectus sit. Est rem qui impedit
-            ipsam consequuntur mollitia voluptatem, id error.
+            Fullstack Developer based out of kitchener
         </p>
 
         <div class="about-me__body">
@@ -136,37 +139,32 @@
     <!-- My Work - portfolio  images and links to deployement -->
     <section class="my-work" id="work">
         <h2 class="section__title">My work</h2>
-        <p class="section__subtitle"></p>
+        <p class="section__subtitle"> A selection of my range of work</p>
 
         <div class="portfolio">
             <!-- Portfolio item 01 -->
             <a class="portfolio__item" href="#">
-                <img class="section__image section__image--portfolio"
-                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+                <img class="section__image--portfolio" src="./assets/images/placeholder_images/600x600.jpg" alt="">
             </a>
 
             <!-- Portfolio item 02 -->
             <a class="portfolio__item" href="#">
-                <img class="section__image section__image--portfolio"
-                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+                <img class="section__image--portfolio" src="./assets/images/placeholder_images/600x600.jpg" alt="">
             </a>
 
             <!-- Portfolio item 03 -->
             <a class="portfolio__item" href="#">
-                <img class="section__image section__image--portfolio"
-                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+                <img class="section__image--portfolio" src="./assets/images/placeholder_images/600x600.jpg" alt="">
             </a>
 
             <!-- Portfolio item 04 -->
             <a class="portfolio__item" href="#">
-                <img class="section__image section__image--portfolio"
-                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+                <img class="section__image--portfolio" src="./assets/images/placeholder_images/600x600.jpg" alt="">
             </a>
 
             <!-- Portfolio item 05 -->
             <a class="portfolio__item" href="#">
-                <img class="section__image section__image--portfolio"
-                    src="./assets/images/placeholder_images/600x600.jpg" alt="">
+                <img class="section__image--portfolio" src="./assets/images/placeholder_images/600x600.jpg" alt="">
             </a>
         </div>
 
@@ -185,7 +183,7 @@
         </div>
         <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.2812459320808!2d-80.41248313426631!3d43.39205067913108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b8a7e1e54e5cf%3A0xc7bfd108b108e691!2sKitchener%2C%20ON%20N2P%201G4!5e0!3m2!1sen!2sca!4v1657576471756!5m2!1sen!2sca"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 

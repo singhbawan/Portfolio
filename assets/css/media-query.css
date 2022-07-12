@@ -1,0 +1,59 @@
+/*The viewport breakpoints are : 1-> 1000px ,2->     ,3->      ,4->        ,5->*/
+
+/* Media query for viewport width 1000px they will come in effect,
+when the viewport size is above the aforementioned value */
+
+/* root variables */
+
+@media (min-width: 1000px) {
+  :root {
+    --fs-h1: 4rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+/* media queries for navigation bar logo */
+
+@media (min-width: 1000px) {
+  .logo {
+    padding: 2em 0 0 0;
+    background-color: #020008;
+    line-height: 0;
+    width: 250px;
+  }
+}
+
+/* Navigation bar  */
+
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    align-items: stretch;
+    background-color: #080808;
+    justify-content: flex-start;
+  }
+  nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+  }
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+/* END Navigation Bar */
+
+/* Media query for Intro */
+
+/* END Media query for Intro */
