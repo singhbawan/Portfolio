@@ -55,5 +55,16 @@ when the viewport size is above the aforementioned value */
 /* END Navigation Bar */
 
 /* Media query for Intro */
-
+@media (min-width: 1000px) {
+  .intro {
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 6em 0;
+  }
+}
 /* END Media query for Intro */
+
+/* Media query for Skills */
+@media (min-width: 1000px) {
+}
+/* END Media query for Skills */

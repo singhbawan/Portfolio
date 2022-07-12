@@ -107,11 +107,7 @@ h3 {
 
 .btn:hover {
   background: #2debe1;
-  padding: 0.25em 0.25em;
   color: #1d1d1d;
-  text-decoration: none;
-  font-size: 2em;
-  font-weight: 700;
 }
 
 /* Decorative Styles End */
@@ -166,18 +162,28 @@ header {
 
 /* Intro */
 
+.intro {
+  display: flex;
+  flex-flow: column;
+  margin: 2em 0;
+  padding: 0 1em;
+}
+
+.section__div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+/* image of logo B in the intro h1 */
 .section__image--intro-logo {
   display: inline;
   width: var(--fs-h1);
   margin: 0;
 }
 
-.intro {
-  display: flex;
-  justify-content: center;
-  /* flex-flow: column; */
-}
-
+/* Profile picture */
 .section__image--intro {
   border: #2debe1 4px solid;
   border-radius: 5em;
@@ -186,3 +192,5 @@ header {
 .section__image--intro:hover {
   opacity: 0.75;
 }
+
+/* END intro */
