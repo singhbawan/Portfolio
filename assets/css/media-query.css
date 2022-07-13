@@ -75,12 +75,12 @@ when the viewport size is above the aforementioned value */
 
   .section__div--skills-des {
     width: 45vw;
-    margin: 0 1em 0 2em;
+    margin: 0 1em 0 1em;
   }
 
   .section__div--skills-bar {
-    background-color: darkolivegreen;
     width: 55vw;
+    padding-left: 2em;
   }
 
   .background_bar {
@@ -88,3 +88,14 @@ when the viewport size is above the aforementioned value */
   }
 }
 /* END Media query for Skills */
+
+@media (min-width: 1000px) {
+  .div-group {
+    flex-flow: row;
+  }
+
+  .section__image--about-me {
+    width: 90%;
+    height: 100%;
+  }
+}

@@ -15,7 +15,9 @@
   --fw-bold: 900;
 
   --clr-light: #e4e4e4;
+  --clr-darkerdark: #020008;
   --clr-dark: #1d1d1d;
+  --clr-lightdark: #6c706f;
   --clr-accent: #2debe1;
 
   --fs-h1: 2.75rem;
@@ -79,14 +81,16 @@ h3 {
 .section__title {
   color: var(--clr-accent);
   font-size: var(--fs-title);
+  margin: 1em 0 0 0;
 }
 
 .section__subtitle {
-  background-color: var(--clr-accent);
-  color: var(--clr-dark);
+  background-color: var(--clr-lightdark);
+  color: var(--clr-darkerdark);
   border-radius: 1em;
   margin: 1em 0;
   padding: 0.05em 1.5em;
+  width: fit-content;
   font-size: var(--fs-h3);
   font-weight: var(--fw-med);
 }
@@ -96,11 +100,11 @@ h3 {
 /* Decorative Styles */
 
 .btn {
-  background: #1d1d1d;
-  border: #2debe1 4px solid;
+  background: var(--clr-dark);
+  border: var(--clr-accent) 4px solid;
   border-radius: 5em;
   padding: 0.25em 0.25em;
-  color: white;
+  color: var(--clr-light);
   text-decoration: none;
   font-size: 2em;
   font-weight: 700;
@@ -108,8 +112,8 @@ h3 {
 }
 
 .btn:hover {
-  background: #2debe1;
-  color: #1d1d1d;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
 }
 
 /* Decorative Styles End */
@@ -122,7 +126,7 @@ header {
 
 .logo {
   padding: 2em 0 0.125em 0;
-  background-color: #020008;
+  background-color: var(--clr-darkerdark);
   line-height: 0;
 }
 
@@ -193,7 +197,7 @@ header {
 
 /* Profile picture */
 .section__image--intro {
-  border: #2debe1 4px solid;
+  border: var(--clr-accent) 4px solid;
   border-radius: 5em;
 }
 
@@ -214,14 +218,18 @@ header {
   width: 85vw;
 }
 
+.section__link--skills {
+  font-size: var(--fs-body);
+  padding: 0 2em;
+}
+
 .section__div--skills-bar {
-  background-color: darkgoldenrod;
   display: flex;
   justify-content: space-evenly;
 }
 
 .background_bar {
-  margin: 1em 0 0 1em;
+  margin: 1em 0 1em 1em;
   width: 80vw;
   height: 2px;
   background-color: #080808;
@@ -244,8 +252,39 @@ header {
 }
 
 .skill_bar--ReactJS {
-  background-color: plum;
-  width: 1%;
+  background-color: orange;
+  width: 2%;
+}
+
+.skill_bar--Java {
+  background-color: purple;
+  width: 65%;
 }
 
 /* END Skills */
+
+/* About me */
+
+.div-group {
+  display: flex;
+  flex-flow: column;
+}
+
+.section__div--about-me {
+  margin: 0 1em 0 1em;
+  flex: 45%;
+}
+
+.section__image__container--about-me {
+  flex: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.section__image--about-me {
+  width: 85vw;
+  border-radius: 5em;
+  border: var(--clr-accent) 4px solid;
+}
+
+/* END About me */
