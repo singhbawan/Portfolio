@@ -99,3 +99,25 @@ when the viewport size is above the aforementioned value */
     height: 100%;
   }
 }
+
+@media (min-width: 1000px) {
+  .section__image--portfolio {
+    width: 27vw;
+  }
+
+  .portfolio__item:hover .section__image--portfolio {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  #back_to_top {
+    opacity: 0.2;
+    width: 100px;
+  }
+
+  #back_to_top:hover {
+    opacity: 1;
+    width: 105px;
+  }
+}

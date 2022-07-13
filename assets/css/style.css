@@ -116,6 +116,21 @@ h3 {
   color: var(--clr-dark);
 }
 
+#back_to_top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+  width: 50px;
+  opacity: 0.3;
+}
+
+#back_to_top:hover {
+  opacity: 1;
+  width: 55px;
+}
+
 /* Decorative Styles End */
 
 header {
@@ -268,6 +283,7 @@ header {
 .div-group {
   display: flex;
   flex-flow: column;
+  align-items: flex-start;
 }
 
 .section__div--about-me {
@@ -288,3 +304,51 @@ header {
 }
 
 /* END About me */
+
+/* My Work */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.section__image--portfolio {
+  border-radius: 5em;
+  margin: 1em 1em;
+  width: 85vw;
+  border: var(--clr-accent) 4px solid;
+}
+
+.portfolio__item:hover {
+  opacity: 1;
+}
+
+.portfolio__item:hover .section__image--portfolio {
+  width: 90vw;
+}
+
+.portfolio__item {
+  position: relative;
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 35%;
+  right: 35%;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+  font-size: var(--fs-h3);
+  pointer-events: none;
+  display: none;
+  text-align: center;
+  padding-top: 1.5em;
+  color: var(--clr-darkerdark);
+}
+
+.portfolio__item:hover .overlay {
+  display: block;
+}
+/* END My Work */
