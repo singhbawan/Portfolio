@@ -324,7 +324,7 @@ header {
 }
 
 .portfolio__item:hover .section__image--portfolio {
-  width: 90vw;
+  transform: scale(1.125);
 }
 
 .portfolio__item {
@@ -334,8 +334,8 @@ header {
 
 .overlay {
   position: absolute;
-  top: 35%;
-  right: 35%;
+  top: 25%;
+  right: 25%;
   width: 6em;
   height: 6em;
   border-radius: 50%;
@@ -352,3 +352,57 @@ header {
   display: block;
 }
 /* END My Work */
+
+/* Contact Me */
+
+.contact_me {
+  margin: 6em 0;
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+}
+
+.section__div--contact-info {
+  margin: 0em 1em 0em 1em;
+  flex: 45%;
+}
+
+.section__iframe__container {
+  flex: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 85vw;
+  height: 85vw;
+  border-radius: 1em;
+  border: var(--clr-accent) 4px solid;
+  padding: 3px;
+}
+
+.section__subtitle--contact-me {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  font-size: var(--fs-body);
+}
+.section__div--contact-info a {
+  margin: 0 2em;
+  color: var(--clr-accent);
+}
+
+/* END Contact Me */
+
+.social-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-list__item {
+  padding: 0 2em;
+  list-style: none;
+}
+
+.social-list__link img {
+  width: 100px;
+  opacity: 0.8;
+}

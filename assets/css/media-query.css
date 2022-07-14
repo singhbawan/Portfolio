@@ -89,6 +89,8 @@ when the viewport size is above the aforementioned value */
 }
 /* END Media query for Skills */
 
+/* Media query for about me */
+
 @media (min-width: 1000px) {
   .div-group {
     flex-flow: row;
@@ -100,15 +102,19 @@ when the viewport size is above the aforementioned value */
   }
 }
 
+/* END Media query for about me */
+
+/* Media query for my work */
+
 @media (min-width: 1000px) {
   .section__image--portfolio {
     width: 27vw;
   }
-
-  .portfolio__item:hover .section__image--portfolio {
-    width: 30vw;
-  }
 }
+
+/* END Media query for my work */
+
+/* Media query for decorative butons */
 
 @media (min-width: 1000px) {
   #back_to_top {
@@ -121,3 +127,23 @@ when the viewport size is above the aforementioned value */
     width: 105px;
   }
 }
+
+/* END Media query for decorative butons */
+
+/* Media query for Contact me */
+@media (min-width: 1000px) {
+  .contact_me {
+    flex-flow: row;
+  }
+
+  .map {
+    width: 90%;
+    height: 100%;
+  }
+
+  .section__div--contact-info {
+    margin: 8vw 1em 10vw 1em;
+  }
+}
+
+/* END Media query for Contact me */
