@@ -2,9 +2,9 @@
 
 ## Here you can:
 
-*Learn about me
-*look at the deployed projects
-*connect with me 
+* Learn about me
+* look at the deployed projects
+* connect with me 
 
 
 ## Deployed website url
