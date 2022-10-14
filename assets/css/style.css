@@ -258,12 +258,12 @@ header {
 }
 
 .skill_bar--front_end {
-  width: 45%;
+  width: 60%;
 }
 
 .skill_bar--back_end {
   background-color: red;
-  width: 10%;
+  width: 70%;
 }
 
 .skill_bar--ReactJS {
@@ -273,7 +273,7 @@ header {
 
 .skill_bar--Java {
   background-color: purple;
-  width: 65%;
+  width: 20%;
 }
 
 /* END Skills */
